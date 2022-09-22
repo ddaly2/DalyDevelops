@@ -1,74 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dalton's Personal Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather+Sans:wght@300&family=Sacramento&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/34601af230.js" crossorigin="anonymous"></script>
+    <title>DalyDevelops</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FontAwesome Link -->
+    <script src="https://kit.fontawesome.com/34601af230.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
 </head>
 <body>
-    <div id="header">
-                    <img class="ufo" src="images/ufo.png" alt="ufo">
-                    <h1>I'm Dalton.</h1>
-                    <br>
-                    <h2 class="dev-h2">A web developer.</h2>
-                    <img class="cow-1" src="images/cow.png" alt="cow">
-                    <img class="cow-2" src="images/cow.png" alt="cow">
-                    <!-- <img src="CSS - My Site Images/mountain.png" alt="mountain"> -->
+    <header class="top-container-grid">
+        <a class="logo" href="#">DalyDevelops</a>
+        <nav>
+          <button class="nav-toggle" aria-controls="nav_links" aria-expanded="false"><i class="fa-sharp fa-solid fa-bars"></i></button>
+          <ul class="nav_links" data-visible="false">
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./resume.html">Resume</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="mailto:dalton.daly@yahoo.com"><button id="contact-button" class="cta">Contact</button></a></li>
+          </ul>
+        </nav>
+    </header>
+    <div class="intro-grid">
+      <div class="intro-grid-container-1">
+        <h1>Hello!</h1>
+        <p class="description">My name is Dalton Daly. I am a Web Developer based out of Chicago with a passion for creating clean and interactive UI's. From US Army Special Operations to working with great designers, collaboration is something I truly enjoy. 
+          <br>
+          <a href="./about.html"><button id="learn-more-button">Learn more</button></a>
+        </p>
+      </div>  
+      <!-- <div class="intro-grid-container-2">
+          <div class="headshot-container">
+            <img id="headshot" src="images/HeadShotAug2022.png" alt="me-img">
+          </div>
+      </div> -->
     </div>
-    <div class="middle-container">
-        <div class="profile">
-          <img id="headshot" src="images/HeadShotAug2022.png" alt="me-img">
-          <h2>Hello.</h2>
-          <p class="intro">I currently work as a Regional Manager for a biotech start-up company. <em>However</em>, becoming a Fullstack Web Developer has become my new goal, as I truly enjoy the learning process and the satisfaction of hitting that refresh button and seeing my code come to life.</p>
-        </div>
-        <hr>
-        <div class="skills">
-            <h2>My Skills.</h2>
-            <div class="skill-row">
-                <img class="html-img" src="images/html-1.png" alt="HTML-img">
-                <h3>HTML</h3>
-                <p class="description">I can give your website the structure it needs. As a self taught Software Developer, I can autonomously provide all of your site's information in a logical order.</p>
+      <!-- <hr> -->
+      <div class="skills-container">
+        <h2>MY SKILLS</h2>
+        <div class="skills-grid">
+            <div class="skill">              
+              <img class="skill-img" src="images/html-5.png" alt="HTML-img">
             </div>
-            <div class="skill-row">
-                <img class="css-img" src="images/css-1.png" alt="CSS-img">
-                <h3>CSS</h3>
-                <p class="description-2">With web development (in most cases), looks <strong>are</strong> everything. I enjoy working with talented designers to bring their visions to life.</p>
+            <div class="skill">
+              <img class="skill-img" src="images/css-3.png" alt="CSS-img">
             </div>
-            <div class="skill-row">
-                <img class="leader-img" src="images/leader.png" alt="leadership">
-                <h3>Leadership & Communication</h3>
-                <p class="description-3">After being a Team Leader in Special Operations and a Regional Manager in the biotech industry, I have acquired strong leadership and communication skills.</p>
+            <div class="skill">
+              <img class="skill-img" src="images/js.png" alt="JS-img">
+            </div>
+            <div class="skill">
+              <img class="skill-img" src="images/react.png" alt="React-img">
+            </div>
+            <div class="skill">
+              <img class="skill-img" src="images/nodejs.png" alt="Node-img">
+            </div>
+            <div class="skill">
+              <img class="skill-img" src="images/bootstrap.png" alt="Bootstrap-img">
+            </div>
+            <div class="skill">
+              <img class="skill-img" src="images/Comptia.png" alt="CompTIA-img">
+            </div>
+            <div class="skill">
+              <img class="skill-img" src="images/github.png" alt="GitHub-img">
             </div>
         </div>
-        <hr>
-        <div class="contact-me">
-          <h2>Get In Touch</h2>
-          <h3 class="contact-sub">I am excited to receive any questions, comments, or interests you may have!</h3>
-          <p>Please feel free to click the "CONTACT ME" link below. I answer my emails within 1 hour.</p>
-          <a class="btn" href="mailto:dalton.daly@yahoo.com">CONTACT ME</a>
-        </div>
+        <p class="description">I focus on front end languages such as HTML, CSS, and JS. React.js is my preferred library at the moment but I am always interested to see the strengths and weaknesses the of various options. Coming from a background in IT Support, understanding how a user thinks has become a large part of my development process.</p>
       </div>
+
+      <!-- <hr> -->
+      <div class="view-work-button-container">
+        <a href="./projects.html"><button class="view-work-button">View my projects</button></a>
+      </div>
+
       
-      
-      <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/dalton-daly/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a class="footer-link" href="hobbies.html" target="_blank">Hobbies</a>
-        <a class="footer-link" href="https://github.com/ddaly2" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <footer class="footer-container">
+        <div class="footer-container-grid">
+          <a class="logo" href="#">DalyDevelops</a>
+          <div class="footer-nav-links-container">
+            <ul class="footer-nav-links">
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./resume.html">Resume</a></li>
+              <li><a href="./projects.html">Projects</a></li>
+            </ul>
+            <a href="mailto:dalton.daly@yahoo.com"><button id="contact-button" class="cta footer-nav-links">Contact</button></a>
+          </div>
+          <div class="footer-socials-column">
+            <a class="footer-link" href="https://www.linkedin.com/in/dalton-daly/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="footer-link" href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a class="footer-link" href="https://github.com/ddaly2" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
         <p class="copyright">© 2022, Dalton Daly.</p>
-      </div>
-      
-   
+      </footer>
+
+      <!-- JavaScript Link-->
+      <script src="index.js"></script>
 
 </body>
 </html>
