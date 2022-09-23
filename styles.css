@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Permanent+Marker&family=Poppins:wght@300&display=swap');
 
+html {
+    height: 100%;
+}
 
 body {
     position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -232,7 +238,6 @@ li, a, button{
     text-align: center;
     background-color: #edf0f1;
     margin: 0 0 80px 0;
-    padding: 50px 0;
 }
 
 .skills-grid{
@@ -430,9 +435,9 @@ p.description {
 .projects-main {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 10rem 1rem 10rem 1rem;
+    margin: 6rem 1rem 5rem 1rem;
     max-width: 100%;
-    gap: 5rem;
+    gap: 3rem;
     text-align: center;
 }
 
@@ -442,12 +447,12 @@ p.description {
 }
 
 .project-content {
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
 }
 
 #projects-header {
     text-align: center;
-    margin-top: 5rem;
+    margin: 7rem 0 1rem 0;
     color: #47B5FF;
     font-size: 4rem;
 }
@@ -600,6 +605,14 @@ p.description {
 
     .view-work-button {
         padding: 1rem 4rem;
+    }
+
+    .about-item-left {
+        padding: 1.5rem 8rem;
+    }
+
+    .about-item-right {
+        padding: 1.5rem 8rem;
     }
 
     .about-image {
@@ -763,10 +776,31 @@ p.description {
 @media screen and (max-width: 550px){
     .footer-nav-links li {
         display: inline-block;
-        padding: 0 1rem;
     }
 
     .footer-link {
         display: inline-block;
     }
 }
+
+@media all and (min-width: 550px) and (max-width: 800px) {
+    .footer-nav-links li {
+        display: block;
+    }
+
+    .footer-nav-links li::after{
+        display: none;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .footer-nav-links li{
+        padding: 0;
+    }
+
+    .footer-nav-links li::after{
+        margin: 0 .5rem 0 .5rem;
+    }
+}
+
+
