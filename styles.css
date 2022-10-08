@@ -40,11 +40,15 @@ p {
     font-family: Poppins, sans-serif;
 }
 
+.favicon {
+   width: 50px;
+}
+
 /* NAV BAR */
 
 .top-container-grid {
     background-color: #06283D;
-    padding: .5rem 2.5rem;
+    padding: 1.5rem 2.5rem 1rem 2.5rem;
     position: fixed;
     max-width: 100%;
     top: 0;
@@ -59,10 +63,11 @@ p {
 
 .logo{
     font-family: "Permanent Marker", cursive;
-    font-size: 2rem;
-    cursor: pointer;
+    height: auto;
+    width: 100px;
+    cursor: pointer; 
     margin-right: auto;
-    display: inline-block;
+    display: inline-block; 
 }
 
 .nav-toggle {
@@ -182,8 +187,8 @@ li, a, button{
 .intro-grid h1 {
     color: #47B5FF;
     text-shadow: 1px 1px black;
-    font-size: 5rem;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    margin: 4rem 0px 2rem 0;
 }
 
 .intro-grid-container-1{
@@ -199,11 +204,12 @@ li, a, button{
 
 #learn-more-button {
     padding: .5rem 1rem;
-    margin: 4rem 0 2rem 0;
+    margin: 2rem 0 2rem 0;
     color: white;
     font-family: Kanit, sans-serif;
     font-size: 1.3rem;
     border: 2px white solid;
+    border-radius: 50px;
     background-image: linear-gradient(45deg, white 50%, rgb(0, 0, 0, 1) 50%);
     background-position: right;
     background-size: 300%;
@@ -250,6 +256,9 @@ li, a, button{
 
 .skill {
     padding-top: 1rem;
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+    justify-content: center;
 }
 
 .skill-img{
@@ -271,12 +280,13 @@ p.description {
 }
 
 .view-work-button {
-    padding: .5rem 2rem;
-    margin: 2rem 0 8rem 0;
+    padding: .5rem 1rem;
+    margin: 0 0 8rem 0;
     color: #06283D;
     font-family: Kanit, sans-serif;
-    font-size: 2rem;
+    font-size: 1.3rem;
     border: 2px #06283D solid;
+    border-radius: 50px;
     background-image: linear-gradient(45deg, #06283D 50%, transparent 50%);
     background-position: right;
     background-size: 300%;
@@ -410,20 +420,20 @@ p.description {
 }
 
 .about-item-right p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: white;
 }
 
 .about-item-left p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: black;
 }
 
 .about-section h2 {
     text-align: center;
     color: #47B5FF;
-    font-size: 4rem;
-    margin: 7rem 0 1rem 0
+    font-size: 3rem;
+    margin: 8rem 0 1rem 0
 }
 
 .about-image {
@@ -452,13 +462,14 @@ p.description {
 
 #projects-header {
     text-align: center;
-    margin: 7rem 0 1rem 0;
+    margin: 8rem 0 1rem 0;
     color: #47B5FF;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .projects-my-site-link {
     text-align: center;
+    font-family: Poppins, sans-serif;
 }
 
 .projects-my-site-link a {
@@ -496,8 +507,8 @@ p.description {
 
 .resume-container h2 {
     color: #47B5FF;
-    font-size: 4rem;
-    margin: 7rem 0 1rem 0;
+    font-size: 3rem;
+    margin: 8rem 0 1rem 0;
 }
 
 .resume-body {
@@ -568,8 +579,14 @@ p.description {
 
 @media screen and (min-width: 700px){
     
+    .logo {
+        width: 150px;
+        padding-left: 1rem;
+    }
+
     .intro-grid p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        padding: 2rem 2rem 1rem 2rem;
     }
 
     .skills-grid {
@@ -579,9 +596,9 @@ p.description {
     }
 
     .top-container-grid {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
+        display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     .nav_links li{
@@ -604,7 +621,7 @@ p.description {
     }
 
     .view-work-button {
-        padding: 1rem 4rem;
+        padding: 1rem 3rem;
     }
 
     .about-item-left {
@@ -645,11 +662,6 @@ p.description {
 }
 
 @media screen and (min-width: 1000px) {
-    .top-container-grid {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
 
     .about-section {
         margin: 5rem 8% 0 8%;
