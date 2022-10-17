@@ -146,8 +146,8 @@ li, a, button{
         display: inline-block;
         position: absolute;
         z-index: 99;
-        top: 0;
-        right: 0;
+        top: .5rem;
+        right: .5rem;
         aspect-ratio: 1;
         width: 4rem;
         height: 4rem;
@@ -198,8 +198,18 @@ li, a, button{
 
 .intro-grid-container-2{
     text-align: center;
-    padding: 4rem 0;
-    align-items: center;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto 3rem auto;
+    background-image: url(images/Screen\ Shot\ 2022-10-17\ at\ 3.49.59\ PM.png);
+    background-size: cover;
+    background-repeat: none;
+    border-radius: 50%;
+    border: 2px solid #FEF5AC;
+}
+
+.headshot-container {
+    border: 2px solid #FEF5AC;
 }
 
 #learn-more-button {
@@ -221,16 +231,6 @@ li, a, button{
     cursor: pointer;
     background-position: left;
     color: #06283D;
-}
-
-.headshot-container {
-    margin-top: 5%;
-    display: inline-block; 
-    max-width: 100%; 
-    max-height: 350px; 
-    overflow: hidden; 
-    border: 2px solid #FEF5AC;
-    justify-content: center;
 }
 
 #headshot{
@@ -352,9 +352,9 @@ p.description {
 .footer-link{
     text-decoration: none;
     color: #47B5FF;
-    margin: 30px;
+    margin: 1rem;
     font-size: 2rem;
-    display: block;
+    display: inline-block;
     transition: all 0.3s ease 0s;
 }
 
@@ -362,7 +362,9 @@ p.description {
     color: #edf0f1;
 }
 
-
+.footer-socials-column {
+    text-align: center;
+}
 
 .copyright{
     text-align: center;
@@ -743,6 +745,10 @@ p.description {
 }
 
 @media screen and (min-width: 550px) {
+    .footer-socials-column {
+        display: inline-block;
+    }
+    
     .footer-container-grid{
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
