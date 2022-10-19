@@ -198,8 +198,8 @@ li, a, button{
 
 .intro-grid-container-2{
     text-align: center;
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
     margin: 0 auto 3rem auto;
     background-image: url(images/Screen\ Shot\ 2022-10-17\ at\ 3.49.59\ PM.png);
     background-size: cover;
@@ -287,7 +287,7 @@ p.description {
     font-size: 1.3rem;
     border: 2px #06283D solid;
     border-radius: 50px;
-    background-image: linear-gradient(45deg, #06283D 50%, transparent 50%);
+    background-color: #47B5FF;
     background-position: right;
     background-size: 300%;
     transition: all .4s ease-in;
@@ -296,8 +296,8 @@ p.description {
 .view-work-button:hover,
 .view-work-button:focus {
     cursor: pointer;
-    background-position: left;
-    color: white;
+    box-shadow: 0 0 15px gray;
+    color: #edf0f1;
 }
 
 /* FOOTER */
@@ -478,20 +478,27 @@ p.description {
 }
 
 .project-h3 {
-    color: #06283D;
+    color: #47B5FF;
     text-decoration: underline;
 }
 
 .project-p {
     color: gray;
+    margin: 0;
 }
 
 .project-icon {
+    display: grid;
+    grid-template-rows: .5fr .5fr 2fr 1.15fr;
     border: 2px solid #06283D;
-    width: 90%;
+    width: 85%;
+    height: auto;
+    justify-items: center;
 }
 
 .project-img {
+    width: 90%;
+    height: auto;
     position: relative;
     background-size: contain;
     background-repeat: no-repeat;
@@ -516,11 +523,31 @@ p.description {
     visibility: hidden;
 }
 
-#project-github-link {
-    font-size: 4rem;
-    display: block;
+.project-icon-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-icon-buttons-only-one {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#view-app-button {
+    padding: .5rem 1rem;
     color: #06283D;
-    margin-top: 1.5rem;
+    font-family: Kanit, sans-serif;
+    font-size: 1rem;
+    border: 2px #06283D solid;
+    border-radius: 50px;
+    background-color: #47B5FF;
+    background-position: right;
+    background-size: 300%;
+    transition: all .2s ease-in;
 }
 
 /* RESUME */
@@ -616,6 +643,11 @@ p.description {
     .intro-grid p {
         font-size: 1.2rem;
         padding: 2rem 2rem 1rem 2rem;
+    }
+
+    .intro-grid-container-2 {
+        width: 400px;
+        height: 400px;
     }
 
     .skills-grid {
@@ -758,18 +790,6 @@ p.description {
         font-size: 1.4rem;
     }
 
-    #project-github-link {
-        font-size: 4rem;
-        display: block;
-        color: #efefef;
-        margin-top: -1.5rem;
-        transition: all .3s ease;
-    }
-
-    #project-github-link:hover {
-        color: #47B5FF;
-    }
-
     .projects-main {
         display: flex;
         flex-direction: row;
@@ -777,9 +797,13 @@ p.description {
         justify-content: space-evenly;
     }
 
+    .project-h3 {
+        margin: 1rem;
+    }
+
     .project-img {
         width: 300px;
-        height: 325px;
+        height: 300px;
         position: relative;
         overflow: hidden;
     }
@@ -789,6 +813,8 @@ p.description {
     }
 
     .project-icon {
+        display: grid;
+        grid-template-rows: .25fr .25fr 2fr .6fr;
         position: relative;
         overflow: hidden;
         width: 300px;
@@ -806,7 +832,7 @@ p.description {
         top: -100%;
         left: 0;
         width: 300px;
-        height: 325px;
+        height: 300px;
         box-sizing: border-box;
         visibility: visible;
         transition: all 0.5s;
@@ -831,6 +857,12 @@ p.description {
 
     .project-img:hover .project-content{
         top: 0;
+    }
+
+    #view-app-button:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px gray;
+        color: #edf0f1;
     }
 }
 
