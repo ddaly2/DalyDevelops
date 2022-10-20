@@ -290,13 +290,14 @@ p.description {
     background-color: #47B5FF;
     background-position: right;
     background-size: 300%;
-    transition: all .4s ease-in;
+    transition: all .2s ease-in;
 }
 
 .view-work-button:hover,
 .view-work-button:focus {
+    translate: 0 -3px;
     cursor: pointer;
-    box-shadow: 0 0 15px gray;
+    box-shadow: 3px 3px 5px gray;
     color: #edf0f1;
 }
 
@@ -491,6 +492,7 @@ p.description {
     display: grid;
     grid-template-rows: .5fr .5fr 2fr 1.15fr;
     border: 2px solid #06283D;
+    background-color: #FEF5AC;
     width: 85%;
     height: auto;
     justify-items: center;
@@ -511,11 +513,11 @@ p.description {
 }
 
 .hound-pic {
-    background-image: url(images/socializing.avif);
+    background-image: url(images/socializing.jpg);
 }
 
 .todo-pic {
-    background-image: url(images/pencil.avif);
+    background-image: url(images/pencil.jpg);
 }
 
 .project-content {
@@ -538,7 +540,7 @@ p.description {
 }
 
 #view-app-button {
-    padding: .5rem 1rem;
+    padding: .2rem 1rem;
     color: #06283D;
     font-family: Kanit, sans-serif;
     font-size: 1rem;
@@ -861,7 +863,8 @@ p.description {
 
     #view-app-button:hover {
         cursor: pointer;
-        box-shadow: 0 0 10px gray;
+        translate: 0 -3px;
+        box-shadow: 2px 2px 5px gray;
         color: #edf0f1;
     }
 }
