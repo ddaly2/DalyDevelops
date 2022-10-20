@@ -1,7 +1,9 @@
 const navLinks = document.querySelector(".nav_links");
 const navToggle = document.querySelector(".nav-toggle");
+const year = new Date().getFullYear();
+const copyright = document.querySelector(".copyright");
 
-console.log(navLinks.getAttribute("id"));
+copyright.innerHTML = `© ${year}, Dalton Daly.`
 
 navToggle.addEventListener("click", () => {
   const visibility = navLinks.getAttribute("data-visible");
