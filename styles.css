@@ -519,6 +519,11 @@ p.description {
     background-image: url(images/pencil.jpg);
 }
 
+.recipe-pic {
+    background-image: url(images/baking-pic.png);
+    background-position-y: center;
+}
+
 .project-content {
     padding: 1rem 1rem;
     visibility: hidden;
@@ -812,10 +817,16 @@ p.description {
     }
 
     .projects-main {
-        display: flex;
-        flex-direction: row;
+        /* display: flex;
+        flex-direction: row; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         position: relative;
         justify-content: space-evenly;
+    }
+
+    #temporary-single-project-icon {
+        grid-column: 2/3;
     }
 
     .project-h3 {
