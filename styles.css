@@ -208,10 +208,6 @@ li, a, button{
     border: 2px solid #FEF5AC;
 }
 
-.headshot-container {
-    border: 2px solid #FEF5AC;
-}
-
 #learn-more-button {
     padding: .5rem 1rem;
     margin: 2rem 0 2rem 0;
@@ -520,7 +516,7 @@ p.description {
 }
 
 .recipe-pic {
-    background-image: url(images/baking-pic.png);
+    background-image: url(images/cupcakes.png);
     background-position-y: center;
 }
 
@@ -666,11 +662,6 @@ p.description {
     .intro-grid p {
         font-size: 1.2rem;
         padding: 2rem 2rem 1rem 2rem;
-    }
-
-    .intro-grid-container-2 {
-        width: 400px;
-        height: 400px;
     }
 
     .skills-grid {
