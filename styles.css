@@ -488,6 +488,7 @@ p.description {
     display: grid;
     grid-template-rows: .5fr .5fr 2fr 1.15fr;
     border: 2px solid #06283D;
+    background-color: #DFF6FF;
     width: 85%;
     height: auto;
     justify-items: center;
@@ -518,6 +519,10 @@ p.description {
 .recipe-pic {
     background-image: url(images/cupcakes.png);
     background-position-y: center;
+}
+
+.books-pic {
+    background-image: url(images/bookShelf\ copy.jpg);
 }
 
 .project-content {
@@ -808,16 +813,11 @@ p.description {
     }
 
     .projects-main {
-        /* display: flex;
-        flex-direction: row; */
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         position: relative;
         justify-content: space-evenly;
-    }
-
-    #temporary-single-project-icon {
-        grid-column: 2/3;
+        gap: 2rem;
     }
 
     .project-h3 {
@@ -838,6 +838,7 @@ p.description {
     .project-icon {
         display: grid;
         grid-template-rows: .25fr .25fr 2fr .6fr;
+        padding: 0 1rem 0 1rem;
         position: relative;
         overflow: hidden;
         width: 300px;
@@ -887,6 +888,12 @@ p.description {
         translate: 0 -3px;
         box-shadow: 2px 2px 5px gray;
         color: #edf0f1;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    .projects-main {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
