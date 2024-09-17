@@ -301,7 +301,6 @@ p.description {
 
 .footer-container {
     background-color: #06283D;
-    padding: 30px;
     text-align: center;
 }
 
@@ -565,7 +564,9 @@ p.description {
     text-align: center;
     color: black;
     max-width: 100%;
-    padding-bottom: 4rem;
+    height: 100%;
+    padding-bottom: 1rem;
+    padding-top: 8rem;
 }
 
 .resume-container h2 {
