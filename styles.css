@@ -302,6 +302,7 @@ p.description {
 .footer-container {
     background-color: #06283D;
     text-align: center;
+    padding: 10px 0;
 }
 
 .footer-container-grid{
@@ -345,7 +346,7 @@ p.description {
     display: none;
 }
 
-.footer-link{
+.footer-socials-link{
     text-decoration: none;
     color: #47B5FF;
     margin: 1rem;
