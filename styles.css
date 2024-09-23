@@ -570,8 +570,14 @@ p.description {
   margin: 0 2rem;
   max-width: 100%;
   height: 100%;
-  padding-bottom: 1rem;
-  padding-top: 8rem;
+  padding-bottom: 16px;
+  padding-top: 128px;
+}
+
+.resume-iframe {
+  width: 100%;
+  height: 75vh;
+  border: none;
 }
 
 /* MEDIA QUERIES  */
@@ -801,4 +807,10 @@ p.description {
     justify-content: center;
     align-items: center;
   }
+
+  .resume-iframe {
+    border: 1px solid #000; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
 }
